@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  --ink: #1c1612;
+  --paper: #f4efe6;
+  --line: #c4a574;
+  --muted: #6d6258;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+main {
+  text-align: center;
+  max-width: 36rem;
+}
+
+.rule {
+  width: 4.5rem;
+  height: 1px;
+  margin: 1.25rem auto;
+  background: var(--line);
+}
+
+p {
+  margin: 0;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.soon {
+  letter-spacing: 0.42em;
+  color: var(--ink);
+}
